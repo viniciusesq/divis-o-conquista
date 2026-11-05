@@ -1,0 +1,12 @@
+{
+  "python": "3.13.18",
+  "sistema": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+  "cpus_logicas_visiveis": 2,
+  "memoria_host_visivel": "MemTotal:       13286932 kB",
+  "observacao": "Ambiente remoto/virtualizado; recursos visíveis podem diferir da cota efetiva.",
+  "data_utc": "2026-11-05 22:07:33",
+  "repeticoes": 5,
+  "semente_base": 20261026,
+  "limiar": 16
+}

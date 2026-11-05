@@ -1,0 +1,335 @@
+{
+  "convencoes": "Índices base zero. Soma: desempate por menor início e menor fim. Pontos: qualquer par ótimo.",
+  "soma": [
+    {
+      "nome": "Mistos",
+      "entrada": [
+        -2,
+        3,
+        -1,
+        4,
+        -5
+      ],
+      "esperado": [
+        6,
+        1,
+        3
+      ]
+    },
+    {
+      "nome": "Todos negativos",
+      "entrada": [
+        -8,
+        -3,
+        -6
+      ],
+      "esperado": [
+        -3,
+        1,
+        1
+      ]
+    },
+    {
+      "nome": "Unitário negativo",
+      "entrada": [
+        -5
+      ],
+      "esperado": [
+        -5,
+        0,
+        0
+      ]
+    },
+    {
+      "nome": "Unitário positivo",
+      "entrada": [
+        7
+      ],
+      "esperado": [
+        7,
+        0,
+        0
+      ]
+    },
+    {
+      "nome": "Empate",
+      "entrada": [
+        1,
+        -1,
+        1
+      ],
+      "esperado": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "nome": "Zeros",
+      "entrada": [
+        0,
+        0,
+        0
+      ],
+      "esperado": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "nome": "Todos positivos",
+      "entrada": [
+        1,
+        2,
+        3
+      ],
+      "esperado": [
+        6,
+        0,
+        2
+      ]
+    },
+    {
+      "nome": "Cruza o meio",
+      "entrada": [
+        -5,
+        4,
+        3,
+        -2
+      ],
+      "esperado": [
+        7,
+        1,
+        2
+      ]
+    },
+    {
+      "nome": "Inteiros grandes",
+      "entrada": [
+        100000000000000000000,
+        100000000000000000000,
+        -1
+      ],
+      "esperado": [
+        200000000000000000000,
+        0,
+        1
+      ]
+    }
+  ],
+  "pontos": [
+    {
+      "nome": "Dois pontos",
+      "entrada": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "distancia_esperada": 5,
+      "pares_aceitos": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "nome": "Par único",
+      "entrada": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "distancia_esperada": 1,
+      "pares_aceitos": [
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "nome": "Duplicados",
+      "entrada": [
+        [
+          2,
+          3
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "distancia_esperada": 0,
+      "pares_aceitos": [
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "nome": "Colineares e mesmo x",
+      "entrada": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          20
+        ]
+      ],
+      "distancia_esperada": 1,
+      "pares_aceitos": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "nome": "Empate quadrado",
+      "entrada": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "distancia_esperada": 1,
+      "pares_aceitos": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "nome": "Negativos",
+      "entrada": [
+        [
+          -5,
+          -5
+        ],
+        [
+          -4,
+          -5
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "distancia_esperada": 1,
+      "pares_aceitos": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "nome": "Fracionários",
+      "entrada": [
+        [
+          0.1,
+          0.2
+        ],
+        [
+          0.4,
+          0.6
+        ],
+        [
+          9,
+          9
+        ]
+      ],
+      "distancia_esperada": 0.5,
+      "pares_aceitos": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "nome": "Melhor par entre metades",
+      "entrada": [
+        [
+          -10,
+          0
+        ],
+        [
+          -0.1,
+          0
+        ],
+        [
+          0.1,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "distancia_esperada": 0.2,
+      "pares_aceitos": [
+        [
+          1,
+          2
+        ]
+      ]
+    }
+  ]
+}
